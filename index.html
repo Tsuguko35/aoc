@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Buys Plus</title>
+
+    <!-- Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/mobile_nav.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <header class="max__w p__fixed">
+      <!-- Top Nav  -->
+      <section class="top__nav max__w">
+        <div class="container flex space__between">
+          <nav class="nav__list flex align__center">
+            <a href="#" class="nav__item"
+              ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+            >
+            <a href="#" class="nav__item img"
+              ><img
+                src="./assets/icons/blog_icon.png"
+                alt="blog icon"
+                class="custom__icon"
+                draggable="false" />
+              Blog</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-map-marker" aria-hidden="true"></i> Track my
+              Order</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a
+            >
+          </nav>
+          <nav class="nav__list flex align__center">
+            <a href="#" class="nav__item img"
+              ><img
+                src="./assets/icons/login_icon.png"
+                alt="blog icon"
+                class="custom__icon key"
+                draggable="false" />
+              Login</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-list-ul" aria-hidden="true"></i> My Wishlist</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-user" aria-hidden="true"></i> My Account</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Cart
+              <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+          </nav>
+        </div>
+      </section>
+      <!-- Middle Nav  -->
+      <section class="middle__nav">
+        <div class="container flex space__between align__center">
+          <!-- Logo  -->
+          <a class="logo__container" href="/"
+            ><img class="logo" src="./assets/logo.png" alt="Site Logo"
+          /></a>
+          <!-- Search Function  -->
+          <div class="search flex align__center justify__end">
+            <!-- Search bar  -->
+            <form action="" class="flex justify__end align__center">
+              <div class="custom__input flex align__center">
+                <input
+                  type="text"
+                  placeholder="Find Anything from your home..." />
+                <button class="search__button">
+                  <img
+                    class="max__w max__h"
+                    src="./assets/icons/search.png"
+                    alt="search icon" />
+                </button>
+              </div>
+            </form>
+
+            <!-- Cart Button  -->
+            <div class="cart flex align__center justify__center">
+              <img src="./assets/icons/search_cart.png" alt="cart icon" />
+            </div>
+
+            <!-- Hamburber Button  -->
+            <button class="hamburger__button">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Bottom Nav  -->
+      <section class="bottom__nav">
+        <div class="container flex justify__center">
+          <a class="category flex align__center justify__center active" href="#"
+            >Home</a
+          >
+          <a class="category flex align__center justify__center" href="#"
+            >Accent <i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <a class="category flex align__center justify__center" href="#"
+            >Bedroom <i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <a class="category flex align__center justify__center" href="#"
+            >Dining & Living Room
+            <i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <a class="category flex align__center justify__center" href="#"
+            >Kids & Entertainment
+            <i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Mobile Nav  -->
+      <div class="overlay p__fixed"></div>
+      <div class="nav__mobile flex flex__column p__fixed">
+        <!-- Close Nav  -->
+        <div class="flex justify__end align__center">
+          <i class="fa fa-times close__nav" aria-hidden="true"></i>
+        </div>
+
+        <!-- Search bar  -->
+        <form
+          action=""
+          class="search__form flex justify__end align__center max__w">
+          <div class="custom__input flex align__center max__w">
+            <input type="text" placeholder="Find Anything from your home..." />
+            <button class="search__button">
+              <img
+                class="max__w max__h"
+                src="./assets/icons/search.png"
+                alt="search icon" />
+            </button>
+          </div>
+        </form>
+
+        <!-- User Nav  -->
+        <section class="nav__type flex flex__column">
+          <span class="title">User</span>
+          <div class="nav__list flex flex__column">
+            <a href="#" class="nav__item"
+              ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+            >
+            <a href="#" class="nav__item img"
+              ><img
+                src="./assets/icons/blog_icon.png"
+                alt="blog icon"
+                class="custom__icon"
+                draggable="false" />
+              Blog</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-map-marker" aria-hidden="true"></i> Track my
+              Order</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a
+            >
+            <a href="#" class="nav__item img"
+              ><img
+                src="./assets/icons/login_icon.png"
+                alt="blog icon"
+                class="custom__icon key"
+                draggable="false" />
+              Login</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-list-ul" aria-hidden="true"></i> My Wishlist</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-user" aria-hidden="true"></i> My Account</a
+            >
+            <a href="#" class="nav__item"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Cart
+              <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+
+        <!-- Category Nav  -->
+        <section class="nav__type flex flex__column">
+          <span class="title">Categories</span>
+          <div class="container flex flex__column justify__center">
+            <a class="nav__item active" href="#">Home</a>
+            <a class="nav__item" href="#"
+              >Accent <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+            <a class="nav__item" href="#"
+              >Bedroom <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+            <a class="nav__item" href="#"
+              >Dining & Living Room
+              <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+            <a class="nav__item" href="#"
+              >Kids & Entertainment
+              <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <!-- Main Content  -->
+    <main>
+      <!-- Hero  -->
+      <section class="landing__hero p__relative max__w">
+        <div class="bg__image p__absolute max__w max__h">
+          <img src="./assets/hero/hero_bg.png" alt="hero 1 bg image" />
+        </div>
+        <div
+          class="container padding p__relative flex justify__center align__center">
+          <div
+            class="hero__card flex flex__column align__center justify__center p__relative">
+            <div
+              class="card__text flex flex__column align__center justify__center">
+              <h2>Great Range of Exclusive</h2>
+              <h1>Furniture <span>Packages</span></h1>
+              <p>
+                Exclusive furniture packages to suit every need. Start as little
+                as $00.00
+              </p>
+            </div>
+
+            <button class="card__button">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store Overview  -->
+      <section class="store__overview p__relative max__w">
+        <div class="container padding">Hello</div>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer></footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="./scripts/navbar.js"></script>
+  </body>
+</html>
