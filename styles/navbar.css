@@ -168,10 +168,6 @@ header .bottom__nav .category.active {
   .hamburger__button {
     display: flex;
   }
-
-  .landing__hero {
-    margin-top: 7.52rem;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -179,10 +175,5 @@ header .bottom__nav .category.active {
   header .middle__nav form,
   header .middle__nav .cart {
     display: none;
-  }
-
-  .landing__hero {
-    margin-top: 0rem;
-    padding-top: 7.52rem;
   }
 }

@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@font-face {
+  font-family: Rockwell;
+  src: url("../assets/fonts/Rockwell.ttf");
+}
+
+@font-face {
+  font-family: "Trajan Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trajan Pro Regular"),
+    url("../assets/fonts/TrajanPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Trajan Pro Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Trajan Pro Bold"),
+    url("../assets/fonts/TrajanPro-Bold.woff") format("woff");
+}
 
 :root {
   --primary: #0e9de5;
@@ -7,6 +29,7 @@
   --accent-1: #02dffa;
   --accent-2: #ffa61e;
   --accent-3: #e89415;
+  --accent-4: #cc2966;
   --primary--opacity: rgba(14, 157, 229, 0.3);
 
   --text-color-1: #1e3440;
@@ -16,11 +39,11 @@
   --red: #ea0008;
   --white: #ffffff;
   --black: #000000;
+  --dark-grey: #535353;
 }
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -28,7 +51,6 @@ body {
   color: var(--text-color-1);
   background: var(--white);
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
 }
 
 * {
@@ -40,10 +62,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.landing__hero {
-  margin-top: 14.41rem;
 }
 
 h1,
@@ -85,6 +103,17 @@ li {
 }
 
 /* GLOBAL STYLES  */
+.pacifico {
+  font-family: "Pacifico";
+}
+
+.rockwell {
+  font-family: Rockwell;
+}
+
+.trajan {
+  font-family: "Trajan Pro Regular";
+}
 
 .container {
   max-width: 1336px;
@@ -93,6 +122,10 @@ li {
 
 .container.padding {
   padding: 5rem 1rem;
+}
+
+.container.padding.no__top {
+  padding-top: 0rem;
 }
 
 .flex {
@@ -166,8 +199,12 @@ li {
 /* SECTION TITLE CARD  */
 .section__title__card {
   border-bottom: 1px solid var(--line-color);
-  padding: 3rem 1rem;
-  padding-top: 1rem;
+  padding: 2rem 1rem;
+  padding-top: 0rem;
+}
+
+.section__title__card.line__2 {
+  border-bottom: 1px solid var(--secondary);
 }
 
 .section__title__card::after {
@@ -194,100 +231,4 @@ li {
   color: var(--text-color-2);
   max-width: 50rem;
   padding: 2rem 1rem;
-}
-
-/* CONTENT STYLES */
-
-/* HERO 1 */
-.landing__hero {
-  padding-bottom: 7rem;
-}
-
-.landing__hero > .bg__image {
-  top: 0;
-  left: 0;
-}
-
-.landing__hero > .bg__image > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.landing__hero .hero__card {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 3rem;
-  gap: 2rem;
-}
-
-.landing__hero .hero__card::after {
-  content: "";
-  position: absolute;
-  width: 102%;
-  height: 104%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
-  pointer-events: none;
-}
-
-.landing__hero .hero__card > .card__text > h2,
-.landing__hero .hero__card > .card__text > h1 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.landing__hero .hero__card > .card__text > h2 {
-  font-size: clamp(1.3rem, 5vw, 2rem);
-  color: var(--secondary);
-}
-
-.landing__hero .hero__card > .card__text > h1 {
-  font-size: clamp(2.3rem, 5vw, 4rem);
-  font-weight: 300;
-}
-
-.landing__hero .hero__card > .card__text > h1 > span {
-  color: var(--primary);
-  font-weight: 600;
-}
-
-.landing__hero .hero__card > .card__text > p {
-  text-align: center;
-}
-
-.landing__hero .hero__card > .card__text {
-  gap: 1rem;
-}
-
-.landing__hero .hero__card > .card__button {
-  background-color: var(--secondary);
-  padding: 0.75rem 2rem;
-  color: var(--white);
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.landing__hero .hero__card > .card__button:hover {
-  background-color: var(--red);
-}
-
-@media only screen and (max-width: 1023px) {
-}
-
-@media only screen and (max-width: 767px) {
-}
-
-@media only screen and (max-width: 425px) {
-  /* HERO 1  */
-  .landing__hero .hero__card {
-    padding: 1.5rem;
-  }
 }

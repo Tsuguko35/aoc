@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Buys Plus</title>
+    <!-- Tab Icon  -->
+    <link rel="icon" href="./assets/HomeBuysPlus.ico" />
 
     <!-- CSS  -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/mobile_nav.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/landing_page.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <!-- Icons  -->
     <link
@@ -214,10 +218,10 @@
 
     <!-- Main Content  -->
     <main>
-      <!-- Hero  -->
+      <!-- Hero 1  -->
       <section class="landing__hero p__relative max__w">
         <div class="bg__image p__absolute max__w max__h">
-          <img src="./assets/hero/hero_bg.png" alt="hero 1 bg image" />
+          <img src="./assets/images/hero/hero_bg.png" alt="hero 1 bg image" />
         </div>
         <div
           class="container padding p__relative flex justify__center align__center">
@@ -255,12 +259,301 @@
               et ipsum faucibus, in blandit augue ac-
             </p>
           </div>
+
+          <!-- Overview Cards  -->
+          <div class="card__container flex justify__center align__center">
+            <!-- Card 1 -->
+            <div class="card flex justify__center align__center p__relative">
+              <img
+                class="max__w"
+                src="./assets/images/desc/desc1.png"
+                alt="Overview image 1" />
+              <div
+                class="overview__text flex justify__center align__center flex__column p__absolute">
+                <p class="pacifico">Send the Gift From Home</p>
+                <div
+                  class="overview__percent flex align__center justify__center rockwell">
+                  <p class="percent">20</p>
+                  <div
+                    class="discount__label flex flex__column align__center justify__center">
+                    <span class="symbol">%</span>
+                    <span class="">OFF</span>
+                  </div>
+                </div>
+                <p class="label rockwell">ECOUPON</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="card ctext flex justify__center align__center p__relative">
+              <img
+                class="max__w"
+                src="./assets/images/desc/desc2.png"
+                alt="Overview image 2" />
+              <div
+                class="overview__text flex justify__center align__center flex__column p__absolute">
+                <p class="pacifico">Visit Our Showroom</p>
+                <div
+                  class="overview__percent flex align__center justify__center rockwell">
+                  <div
+                    class="discount__label flex flex__column align__center justify__center">
+                    <span>OUR State-of-the Art</span>
+                    <span class="label">SHOWROOM</span>
+                  </div>
+                </div>
+                <p class="desc">
+                  Our State-of-the Art Furniture Showdown has Variety of major
+                  furnitures from all your favorite brands
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="card ctext c3 flex justify__center align__center p__relative">
+              <img
+                class="max__w"
+                src="./assets/images/desc/desc3.png"
+                alt="Overview image 3" />
+              <div
+                class="overview__text flex justify__center align__center flex__column p__absolute">
+                <p class="rockwell">Save Energy. Save Money</p>
+                <div
+                  class="overview__percent flex align__center justify__center rockwell">
+                  <div
+                    class="discount__label flex flex__column align__center justify__center">
+                    <p class="pacifico">Save</p>
+                    <span class="label">ENVIRONMENT</span>
+                  </div>
+                </div>
+                <p class="desc">
+                  Green furniture and environmentally friendly furnishings.
+                  Organic cotton and wood from renewable sources.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT CATEGORIES  -->
+      <section class="store__categories">
+        <div class="container padding no__top max__w">
+          <!-- Title Card  -->
+          <div
+            class="section__title__card flex justify__center align__center max__w p__relative">
+            <h2>SHOP BY CATEGORIES</h2>
+          </div>
+
+          <!-- CATEGORY LIST  -->
+          <div class="categories flex justify__center align__end max__w">
+            <!-- CATEGORY 1 -->
+            <div
+              class="category flex flex__column align__center justify__center">
+              <img
+                src="./assets/images/category/category_accent.png"
+                alt="category 1" />
+              <p>Accents</p>
+            </div>
+            <!-- CATEGORY 2 -->
+            <div
+              class="category flex flex__column align__center justify__center">
+              <img
+                src="./assets/images/category/category_bedroom.png"
+                alt="category 2" />
+              <p>BEDROOM</p>
+            </div>
+            <!-- CATEGORY 3 -->
+            <div
+              class="category flex flex__column align__center justify__center">
+              <img
+                src="./assets/images/category/category_dining.png"
+                alt="category 3" />
+              <p>Dining Room</p>
+            </div>
+            <!-- CATEGORY 4 -->
+            <div
+              class="category flex flex__column align__center justify__center">
+              <img
+                src="./assets/images/category/category_living.png"
+                alt="category 4" />
+              <p>Living Room</p>
+            </div>
+            <!-- CATEGORY 5 -->
+            <div
+              class="category flex flex__column align__center justify__center">
+              <img
+                src="./assets/images/category/category_kids.png"
+                alt="category 5" />
+              <p>Kids & Entertainment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORE PRODUCTS  -->
+      <section class="store__producs">
+        <div class="container padding no__top max__w">
+          <!-- Title Card  -->
+          <div
+            class="section__title__card flex justify__center align__center max__w p__relative">
+            <h2>SHOP NEW & HOT DEALS PRODUCTS</h2>
+          </div>
+
+          <!-- Section Description  -->
+          <div class="section__desc max__w flex justify__center align__center">
+            <p>
+              Here are our hottest deals from accross our entire site - all in
+              one handy place for you to
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero 2  -->
+      <section class="landing__hero hero2 p__relative max__w">
+        <div class="bg__image p__absolute max__w max__h">
+          <img src="./assets/images/hero/hero2.png" alt="hero 1 bg image" />
+        </div>
+        <div
+          class="container padding p__relative flex justify__center align__center max__w">
+          <div
+            class="hero__card flex flex__column align__center justify__center p__relative max__w">
+            <div
+              class="card__text flex flex__column align__center justify__center">
+              <h2 class="trajan">Home Decors</h2>
+              <h1 class="trajan"><span>& Gifts</span></h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="card__button">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORE ARTICLES  -->
+      <section class="store__articles">
+        <div
+          class="container padding max__w flex align__center justify__center flex__column">
+          <!-- Title Card  -->
+          <div
+            class="section__title__card line__2 flex justify__center align__center max__w p__relative">
+            <h2>Recent Tips / Articles</h2>
+          </div>
+
+          <!-- ARTICLE GRID  -->
+          <div class="article__grid">
+            <!-- ARTICLE 1  -->
+            <div
+              class="article max__w flex flex__column align__center justify__end">
+              <h3 class="title">
+                Objects collection by Republic of Fritz Hansen
+              </h3>
+              <div class="article__details flex flex__column">
+                <img
+                  src="./assets/images/article/article1.png"
+                  alt="article 1" />
+                <p>
+                  Danish brand Republic of Fritz Hansen has become the latest
+                  furni-
+                </p>
+                <a href="#"
+                  >Read More <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <!-- ARTICLE 2  -->
+            <div
+              class="article max__w flex flex__column align__center justify__end">
+              <h3 class="title">
+                Objects collection by Republic of Fritz Hansen
+              </h3>
+              <div class="article__details flex flex__column">
+                <img
+                  src="./assets/images/article/article2.png"
+                  alt="article 1" />
+                <p>
+                  Danish brand Republic of Fritz Hansen has become the latest
+                  furni-
+                </p>
+                <a href="#"
+                  >Read More <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <!-- ARTICLE 3  -->
+            <div
+              class="article max__w flex flex__column align__center justify__end">
+              <h3 class="title">
+                Objects collection by Republic of Fritz Hansen
+              </h3>
+              <div class="article__details flex flex__column">
+                <img
+                  src="./assets/images/article/article3.png"
+                  alt="article 1" />
+                <p>
+                  Danish brand Republic of Fritz Hansen has become the latest
+                  furni-
+                </p>
+                <a href="#"
+                  >Read More <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <!-- ARTICLE 4  -->
+            <div
+              class="article max__w flex flex__column align__center justify__end">
+              <h3 class="title">
+                Objects collection by Republic of Fritz Hansen
+              </h3>
+              <div class="article__details flex flex__column">
+                <img
+                  src="./assets/images/article/article4.png"
+                  alt="article 1" />
+                <p>
+                  Danish brand Republic of Fritz Hansen has become the latest
+                  furni-
+                </p>
+                <a href="#"
+                  >Read More <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <button class="show__more">View All Articles</button>
         </div>
       </section>
     </main>
 
     <!-- Footer  -->
-    <footer></footer>
+    <footer>
+      <!-- NEWS LETTER  -->
+      <div class="news__letter">
+        <div
+          class="container flex align__center space__between max__w p__relative">
+          <img
+            src="./assets/email.png"
+            alt="detail"
+            class="email__detail p__absolute max__w" />
+          <div class="label">
+            <p>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i
+              >&nbsp;&nbsp;&nbsp;&nbsp;Sign up for our newsletter:
+            </p>
+          </div>
+
+          <form action="" class="flex align__center justify__end">
+            <input type="text" placeholder="Email Address" class="max__w" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
