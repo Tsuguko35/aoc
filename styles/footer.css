@@ -52,9 +52,13 @@ footer > .news__letter > div > form > button {
 }
 
 /* FOOTER CREDITS  */
+footer > .news__letter.credits > div {
+  padding: 1rem;
+}
+
 footer > .news__letter.credits > div > .label {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 0.75rem;
   flex: 1;
   text-transform: none;
   font-weight: 300;

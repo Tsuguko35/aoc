@@ -30,6 +30,8 @@
   --accent-2: #ffa61e;
   --accent-3: #e89415;
   --accent-4: #cc2966;
+  --accent-5: #e0f4fe;
+  --accent-6: #728c98;
   --primary--opacity: rgba(14, 157, 229, 0.3);
 
   --text-color-1: #1e3440;
@@ -85,11 +87,12 @@ li {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--primary);
+  background: var(--white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--white);
+  background: var(--line-color);
+  border-radius: 5px;
 }
 
 ::selection {
