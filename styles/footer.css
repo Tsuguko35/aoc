@@ -23,7 +23,6 @@ footer > .news__letter > div > .label {
   flex: 1;
   text-transform: uppercase;
   font-weight: 700;
-
 }
 
 footer > .news__letter > div > form {
@@ -52,24 +51,169 @@ footer > .news__letter > div > form > button {
   cursor: pointer;
 }
 
+/* FOOTER CREDITS  */
+footer > .news__letter.credits > div > .label {
+  color: var(--white);
+  font-size: 1rem;
+  flex: 1;
+  text-transform: none;
+  font-weight: 300;
+}
+
+footer > .news__letter.credits > div > .socials {
+  flex: 1;
+  color: var(--white);
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+footer > .news__letter.credits > div > .socials > a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+footer > .news__letter.credits > div > .socials > a:hover {
+  background-color: var(--white);
+  color: var(--text-color-1);
+}
+
+/* FOOTER MAIN  */
+footer > .footer__main {
+  padding: 3rem 1rem;
+  background-color: var(--white);
+  gap: 2rem;
+  min-height: 28rem;
+}
+
+footer > .footer__main > .company__details {
+  flex: 1;
+  gap: 2rem;
+}
+
+footer > .footer__main > .company__details > img {
+  width: min(100%, 22rem);
+  height: auto;
+  object-fit: contain;
+}
+
+footer > .footer__main > .company__details > p {
+  color: var(--dark-grey);
+  max-width: 22rem;
+  font-weight: 600;
+}
+
+footer > .footer__main > .footer__nav {
+  flex: 2;
+}
+
+footer > .footer__main > .footer__nav > .nav__section {
+  gap: 1rem;
+  border-left: 2px solid var(--line-color);
+  padding: 0rem 2rem;
+}
+
+footer > .footer__main > .footer__nav > .nav__section > .nav__title {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer > .footer__main > .footer__nav > .nav__section > ol {
+  padding-left: 1.1rem;
+  gap: 0.75rem;
+}
+
+footer > .footer__main > .footer__nav > .nav__section > ol > li {
+  list-style-type: square;
+}
+
+footer > .footer__main > .footer__nav > .nav__section > ol > li::marker {
+  color: var(--primary);
+}
+
+footer > .footer__main > .footer__nav > .nav__section > ol > li > a {
+  font-weight: 600;
+  color: var(--dark-grey);
+  transition: color 0.2s ease-in-out;
+}
+
+footer > .footer__main > .footer__nav > .nav__section > ol > li > a:hover {
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1024px) {
+  /* FOOTER MAIN  */
+  footer > .footer__main {
+    flex-direction: column;
+  }
+
+  footer > .footer__main > .company__details,
+  footer > .footer__main > .footer__nav {
+    flex: 1;
+  }
+
+  footer > .footer__main > .company__details {
+    align-items: center;
+  }
+
+  footer > .footer__main > .company__details > p {
+    max-width: 40rem;
+    text-align: center;
+  }
+
+  footer > .footer__main > .footer__nav {
+    justify-content: center;
+  }
+
+  footer > .footer__main > .footer__nav > .nav__section:first-child {
+    border-left: none;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   /* NEWSLETTER  */
   footer > .news__letter > div {
     flex-direction: column;
     gap: 2rem;
   }
+}
 
-  footer > .news__letter > div
+@media only screen and (max-width: 767px) {
+  /* FOOTER NAV  */
+  footer > .footer__main > .footer__nav {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  footer > .footer__main > .footer__nav > .nav__section {
+    border-left: none;
+    align-items: center;
+    padding: 0rem 1rem;
+  }
+
+  footer > .footer__main > .footer__nav > .nav__section > ol {
+    align-items: center;
+    padding: 0rem;
+  }
+
+  footer > .footer__main > .footer__nav > .nav__section > ol > li {
+    list-style-type: none;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-    /* NEWSLETTER  */
-    footer > .news__letter > div > form{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    footer > .news__letter > div > form > input{
-        width: 100%;
-    }
+  /* NEWSLETTER  */
+  footer > .news__letter > div > form {
+    flex-direction: column;
+    width: 100%;
   }
+
+  footer > .news__letter > div > form > input {
+    width: 100%;
+  }
+}

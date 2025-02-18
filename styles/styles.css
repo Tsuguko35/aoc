@@ -148,6 +148,10 @@ li {
   align-items: flex-end;
 }
 
+.align__end {
+  align-items: flex-start;
+}
+
 .justify__center {
   justify-content: center;
 }
