@@ -55,6 +55,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+body.no__scroll,
+html.no__scroll {
+  overflow: hidden;
+  touch-action: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

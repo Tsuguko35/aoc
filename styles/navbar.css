@@ -19,6 +19,13 @@ header {
 header .top__nav {
   background-color: var(--primary);
   color: var(--white);
+  max-height: 15rem;
+  transition: max-height 0.2s ease-in-out;
+}
+
+header.scrolled .top__nav {
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0rem;
 }
 
 header .top__nav > div {
