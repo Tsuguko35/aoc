@@ -157,7 +157,7 @@ li {
 }
 
 .align__end {
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .justify__center {
