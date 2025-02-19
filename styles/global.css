@@ -156,8 +156,8 @@ li {
   align-items: flex-end;
 }
 
-.align__end {
-  align-items: flex-end;
+.align__start {
+  align-items: flex-start;
 }
 
 .justify__center {
